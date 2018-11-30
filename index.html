@@ -1,8 +1,35 @@
+<!DOCTYPE html>
 <html>
-  <body>
-    <div id="container">
-      <div id="output">nothing yet</div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+<body>
+
+<p>Loopin through an array using a for loop:</p>
+
+<p id="demo"></p>
+
+<script>
+
+var myObj, i, x = "";
+myObj = {
+    "items": {
+        "weapons": [
+            {"name":"axe", "type":"melee"},
+            {"name":"sword", "type":"melee"},
+            {"name":"bow", "type":"melee"}
+        ],
+        "armor": [
+            {"model":"Taurus", "doors":4},
+            {"model":"Escort", "doors":4}
+        ]
+    }
+};
+
+for (i = 0; i < myObj.items.weapons; i++) {
+    x += myObj.items.weapons[i].name + "<br>";
+}
+
+document.getElementById("demo").innerHTML = x;
+
+</script>
+
+</body>
 </html>
