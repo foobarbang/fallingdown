@@ -3,4 +3,4 @@ var jcontent = {
   "price": "10"
 }
 var output = document.getElementByID('output')
-output.innerHTML = 'new content';
+output.innerHTML = jcontent.name + ' ' + jcontent.price;
