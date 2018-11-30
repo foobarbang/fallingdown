@@ -13,7 +13,7 @@ var jcontent = {
     }
 }
 
-for (i = 0; i < jcontent.Items.Weapons[i]; i++) {
+for (i = 0; i < jcontent.Items.Weapons.length; i++) {
     x += jcontent.Items.Weapons[i].name + "<br>";
 }
 
