@@ -1,3 +1,4 @@
+var i, x = ""
 var jcontent = {
     "Items": {
         "Weapon": [
@@ -11,5 +12,10 @@ var jcontent = {
         ]
     }
 }
+
+for (i = 0; i < jcontent.Items.Weapon; i++) {
+    x += myObj.cars[i] + "<br>";
+}
+
 var output = document.getElementById('output');
-output.innerHTML = jcontent.name + ' ' + jcontent.price;
+output.innerHTML = x;
