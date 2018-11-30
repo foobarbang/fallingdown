@@ -1,7 +1,7 @@
 var i, x = ""
 var jcontent = {
     "Items": {
-        "Weapon": [
+        "Weapons": [
             {"name":"Sentra", "type":"axe", "weight":10},
             {"name":"Maxima", "type":"sword", "weight":10},
             {"name":"Skyline", "type":"dagger", "weight":10}
@@ -13,8 +13,8 @@ var jcontent = {
     }
 }
 
-for (i = 0; i < jcontent.Items.Weapon; i++) {
-    x += myObj.cars[i] + "<br>";
+for (i = 0; i < jcontent.Items.Weapons[i]; i++) {
+    x += jcontent.Items.Weapon[i] + "<br>";
 }
 
 var output = document.getElementById('output');
