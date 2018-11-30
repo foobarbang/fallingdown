@@ -14,7 +14,7 @@ var jcontent = {
 }
 
 for (i = 0; i < jcontent.Items.Weapons[i]; i++) {
-    x += jcontent.Items.Weapon[i].name + "<br>";
+    x += jcontent.Items.Weapons[i].name + "<br>";
 }
 
 var output = document.getElementById('output');
